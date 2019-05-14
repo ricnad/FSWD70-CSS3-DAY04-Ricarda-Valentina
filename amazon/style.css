@@ -1,3 +1,7 @@
+body {
+  font-size: 16px;
+  font-family: Amazon Ember, sans-serif; }
+
 #nav-belt {
   background-color: #233040;
   width: 100vw;
@@ -47,24 +51,52 @@ select {
   margin: 0.5em 0em; }
 
 #container {
-  display: flex; }
+  display: flex;
+  width: 100%; }
+
+/* SIDEBAR */
+#sidebar {
+  width: 20%;
+  border-right: 0.1rem solid #233040;
+  padding-right: 1rem; }
+
+.title {
+  padding-left: 1rem;
+  font-weight: bold; }
 
 .section {
-  border: 1px solid black; }
+  padding: 0.5rem; }
 
-#sidebar {
-  border: 1px solid black;
-  width: 40%; }
+.section ul {
+  list-style: none; }
 
+.star li {
+  color: #FEBD69; }
+
+/* MAIN CONTENT */
 #main {
-  border: 1px solid black;
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
-  #main .item {
-    width: 25%; }
-    #main .item .item img {
-      max-width: 100%; }
+  align-items: baseline;
+  margin-left: 1rem;
+  padding: 1rem; }
+
+.item a {
+  text-decoration: none;
+  padding: 0.5rem; }
+
+.item {
+  width: 30%;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.item img {
+  width: 60%;
+  display: block;
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */

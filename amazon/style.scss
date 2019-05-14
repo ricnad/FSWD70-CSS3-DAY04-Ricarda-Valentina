@@ -4,8 +4,11 @@ $font-color1: #C1C2C3;
 $font-color2: #FFFFFF;
 $font-color3: #C45500;
 $font-stack: Amazon Ember;
-$section-border: 1px solid black;
-$flex: flex;
+
+body {
+    font-size: 16px;
+    font-family: $font-stack, sans-serif;
+}
 
 #nav-belt {
     background-color: $primary-color;
@@ -62,32 +65,64 @@ select {
 }
 
 #container {
-    display: $flex;
+    display: flex;
+    width: 100%;
+}
+
+
+/* SIDEBAR */
+
+#sidebar {
+    width: 20%;
+    border-right: 0.1rem solid $primary-color;
+    padding-right: 1rem;
+}
+
+.title {
+    padding-left: 1rem;
+    font-weight: bold;
 }
 
 .section {
-    border: $section-border;
+	padding: 0.5rem;
 }
 
-#sidebar {
-    border: $section-border;
-    width: 40%;
+.section ul {
+    list-style: none;
 }
 
+.star li {
+	color: $secondary-color;
+}
+
+/* MAIN CONTENT */
 #main {
-    border: $section-border;
-    width: 60%;
-    display: $flex;
+    width: 80%;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 1rem;
+    padding: 1rem;
 
-    .item {
-        width: 25%;
+}
 
-        .item img {
-            max-width: 100%;
-        }
-    }
+.item a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
 
 
+.item {
+    width: 30%;
+    padding: 0.3rem;
+    margin: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 60%;
+    display: block;
+    height: auto;
 }
