@@ -1,5 +1,50 @@
-header {
-  background-color: #233040; }
+#nav-belt {
+  background-color: #233040;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between; }
+
+#nav-main {
+  background-color: #233040;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between; }
+
+.nav-left, .nav-right {
+  color: #FFFFFF;
+  font-size: 2em; }
+
+.nav-fill {
+  color: #C1C2C3;
+  font-size: 2em; }
+
+.nav-fill li {
+  display: inline;
+  /* show list next to eachother */
+  list-style-type: none;
+  /* no bulletpoints */
+  padding: 0.5em;
+  /* space between list elements */ }
+
+#nav-bar {
+  width: 100%;
+  height: 45px; }
+
+select {
+  height: 45px; }
+
+#submit {
+  height: 45px; }
+
+#searchbar {
+  width: 50%;
+  height: 30px;
+  padding: 6px 10px 6px 0px;
+  margin: 0.5em 0em; }
 
 #container {
   display: flex; }
