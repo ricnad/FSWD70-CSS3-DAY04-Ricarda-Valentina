@@ -1,0 +1,63 @@
+body {
+    font-size: 16px;
+    font-family: "Arial", "sans-serif";
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 80%;
+}
+
+/* Laptop */
+@media only screen and (min-width:768px) {
+
+    #gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+    }
+
+    .image {
+        width: 33%;
+        padding: 0.1rem;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/* Tablet */
+
+@media only screen and (max-width:768px) {
+
+    #gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+    	width: 100%;
+    	padding: 0.1rem;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+}
+
+/* Mobile */
+
+@media only screen and (max-width:480px) {
+
+
+}
