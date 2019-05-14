@@ -10,9 +10,9 @@ body {
     font-family: "Arial", "sans-serif";
 }
 
-#container {
-    margin: 0 auto;
-    max-width: 1000px;
+#container, #container1 {
+    margin: 1rem auto;
+    max-width: 1500px;
     width: 80%;
     background-color: #f6f5f5;
     padding: 1rem;
@@ -25,26 +25,32 @@ h2 {
 
 h1 {
 	color: #048998;
+    text-align: center;
 }
 
 h2 {
 	color: #3bb4c1;
 }
 
+
 .image p {
-	padding-left: 0.2rem;
+    padding-left: 0.2rem;
+}
+
+.image {
+    object-fit: cover;
 }
 
 /* Laptop and PC*/
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:800px) {
 
-	    #title {
+	    #title, #title1 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #gallery {
+    #gallery, #gallery-animals {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -54,6 +60,7 @@ h2 {
 
     .image {
         width: 33%;
+        height: 100%;
         padding: 0.1rem;
     }
 
@@ -72,9 +79,9 @@ h2 {
 
 /* Tablet */
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:800px) {
 
-    #gallery {
+    #gallery, #gallery-animals {
         display: flex;
         flex-direction: column;
     }
