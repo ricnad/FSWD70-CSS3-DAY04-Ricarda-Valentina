@@ -1,4 +1,25 @@
 header {
   background-color: #233040; }
 
+#container {
+  display: flex; }
+
+.section {
+  border: 1px solid black; }
+
+#sidebar {
+  border: 1px solid black;
+  width: 40%; }
+
+#main {
+  border: 1px solid black;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  #main .item {
+    width: 25%; }
+    #main .item .item img {
+      max-width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
